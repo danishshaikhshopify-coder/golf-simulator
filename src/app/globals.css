@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --color-deep: #0b110d;
+  --color-surface: #142018;
+  --color-surface-raised: #1b2922;
+  --color-ivory: #eaece3;
+  --color-lime: #c5e879;
+  --color-muted: #a8b2a5;
+  --color-hairline: rgba(234, 236, 227, 0.1);
+}
+
+@theme inline {
+  --color-deep: var(--color-deep);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-ivory: var(--color-ivory);
+  --color-lime: var(--color-lime);
+  --color-muted: var(--color-muted);
+  --color-hairline: var(--color-hairline);
+  --font-display: var(--font-jakarta);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--color-deep);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-deep);
+}
+
+.hairline {
+  border-color: var(--color-hairline);
+}
+
+/* word-reveal primitive: each word is a span clipped by its parent */
+.reveal-line {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+.reveal-word {
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
