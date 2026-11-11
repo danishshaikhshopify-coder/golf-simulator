@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/basePath";
 import Reveal from "@/components/Reveal";
 import RevealWords from "@/components/RevealWords";
 
@@ -7,7 +8,7 @@ export default function WhoWeHelp() {
     <section className="grid grid-cols-1 md:grid-cols-2">
       <div className="relative h-[50vh] md:h-[80vh]">
         <Image
-          src="/images/swing-action.jpg"
+          src={`${basePath}/images/swing-action.jpg`}
           alt="Customer practicing a swing indoors"
           fill
           sizes="(min-width: 768px) 50vw, 100vw"

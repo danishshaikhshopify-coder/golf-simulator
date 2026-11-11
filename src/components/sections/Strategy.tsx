@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/basePath";
 import Reveal from "@/components/Reveal";
 import RevealWords from "@/components/RevealWords";
 
@@ -14,7 +15,7 @@ export default function Strategy() {
     <section className="relative">
       <div className="relative flex h-[46vh] items-end overflow-hidden sm:h-[52vh]">
         <Image
-          src="/images/flatlay-overhead.jpg"
+          src={`${basePath}/images/flatlay-overhead.jpg`}
           alt="Golf equipment detail"
           fill
           sizes="100vw"

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { gsap } from "@/lib/gsap";
+import { basePath } from "@/lib/basePath";
 import RevealWords from "@/components/RevealWords";
 
 export default function Hero() {
@@ -34,7 +35,7 @@ export default function Hero() {
     <section className="relative flex h-[100svh] flex-col justify-end overflow-hidden">
       <div ref={imgRef} className="absolute inset-0 -top-[10%] h-[120%] w-full">
         <Image
-          src="/images/hero-bay.jpg"
+          src={`${basePath}/images/hero-bay.jpg`}
           alt="Premium indoor golf simulator bay"
           fill
           priority

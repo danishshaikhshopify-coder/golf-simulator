@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/basePath";
 import Reveal from "@/components/Reveal";
 import RevealWords from "@/components/RevealWords";
 
@@ -13,7 +14,7 @@ export default function Promise() {
           />
           <div className="relative h-full w-full overflow-hidden rounded-sm">
             <Image
-              src="/images/club-closeup.jpg"
+              src={`${basePath}/images/club-closeup.jpg`}
               alt="Golf club and ball detail"
               fill
               sizes="(min-width: 768px) 40vw, 90vw"
