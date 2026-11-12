@@ -9,7 +9,7 @@ const problems = [
 export default function Problems() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24 sm:py-32 md:py-40">
-      <p className="text-sm tracking-[0.1em] text-muted">THE PROBLEM</p>
+      <p className="text-sm text-muted">The problem</p>
 
       <div className="mt-10 flex flex-col divide-y divide-hairline">
         {problems.map(({ text, fade }) => (

@@ -21,7 +21,9 @@ export default function WhoWeHelp() {
           <RevealWords text="Built for Golf Simulator Businesses." />
         </h2>
         <Reveal delay={0.15}>
-          <p className="mt-5 text-xl text-lime">Dealers. Retailers. Resellers.</p>
+          <p className="mt-5 text-xl text-lime">
+            Golf Simulator Dealers, Retailers, Resellers &amp; Bay Operators
+          </p>
         </Reveal>
       </div>
     </section>

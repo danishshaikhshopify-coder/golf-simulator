@@ -26,9 +26,9 @@ export default function Decision() {
       <Reveal delay={0.4}>
         <button
           type="button"
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-lime px-8 py-4 text-sm font-medium text-deep transition-transform hover:scale-[1.02]"
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-lime px-8 py-4 text-sm font-medium text-deep transition-[background-color,transform] hover:bg-ivory active:scale-[0.98]"
         >
-          Let&rsquo;s Talk About Your Growth
+          Let&rsquo;s talk about your growth
           <ArrowRight size={16} strokeWidth={2} />
         </button>
       </Reveal>
